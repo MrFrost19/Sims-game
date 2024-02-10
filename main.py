@@ -1,5 +1,15 @@
 import random
 
+job_list = {"Java developer": {"salary": 50, "gladness_less": 10},
+            "Python developer": {"salary": 40, "gladness_less": 3},
+            "C++ developer": {"salary": 45, "gladness_less": 25},
+            "Rust developer": {"salary": 70, "gladness_less": 1}, }
+
+brand_of_car = {"BMW": {"fuel": 100, "strength": 100, "cons": 12},
+                "Lada": {"fuel": 100, "strength": 30, "cons": 10},
+                "Volvo": {"fuel": 80, "strength": 120, "cons": 8},
+                "Ferrari": {"fuel": 60, "strength": 80, "cons": 14}, }
+
 
 class Human:
     def __init__(self, name="Human", job=None, home=None, car=None):
@@ -177,15 +187,6 @@ class Job:
         self.gladness_less = job_list[self.job]['gladness_less']
 
 
-job_list = {"Java developer": {"salary": 50, "gladness_less": 10},
-            "Python developer": {"salary": 40, "gladness_less": 3},
-            "C++ developer": {"salary": 45, "gladness_less": 25},
-            "Rust developer": {"salary": 70, "gladness_less": 1}, }
-
-brand_of_car = {"BMW": {"fuel": 100, "strength": 100, "cons": 12},
-                "Lada": {"fuel": 100, "strength": 30, "cons": 10},
-                "Volvo": {"fuel": 80, "strength": 120, "cons": 8},
-                "Ferrari": {"fuel": 60, "strength": 80, "cons": 14}, }
 
 # h = Human()
 # h.get_home()
